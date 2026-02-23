@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduPro — Student Skill Accelerator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <a class="logo" href="#">Edu<span>Pro</span></a>
+
+      <!-- NO-JS Burger -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="burger">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#program">Program</a>
+        <a href="#contact" class="nav-cta">Enroll</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+        <h1>Upgrade your skills in 30 days.</h1>
+        <p>
+          EduPro is a practical learning program for students focusing on
+          responsive web design and professional UI skills.
+        </p>
+
+        <!-- Inline CSS (ONLY once) -->
+        <a href="#contact" class="btn btn-primary" style="letter-spacing:0.5px;">
+          Start Free Demo
+        </a>
+      </div>
+
+      <div class="hero-card">
+        <h2>What you’ll build</h2>
+        <ul>
+          <li>Responsive landing page</li>
+          <li>Clean UI components</li>
+          <li>Professional form design</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2 class="section-title">Features</h2>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Responsive Layout</h3>
+          <p>Works perfectly on mobile and desktop.</p>
+        </div>
+
+        <div class="card">
+          <h3>Clean UI</h3>
+          <p>Modern spacing and typography.</p>
+        </div>
+
+        <div class="card">
+          <h3>No JavaScript</h3>
+          <p>Pure HTML + CSS implementation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Enroll</h2>
+
+      <form class="form">
+        <div class="form-row">
+          <div class="field">
+            <label>Full Name</label>
+            <input type="text" required />
+          </div>
+
+          <div class="field">
+            <label>Email</label>
+            <input type="email" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Role</label>
+          <select required>
+            <option selected disabled>Select role</option>
+            <option>Student</option>
+            <option>Faculty</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Message</label>
+          <textarea rows="4"></textarea>
+        </div>
+
+        <label class="check">
+          <input type="checkbox" required />
+          <span>I agree to terms.</span>
+        </label>
+
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

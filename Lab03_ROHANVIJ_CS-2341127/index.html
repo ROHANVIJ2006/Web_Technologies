@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Club Registration</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <img class="logo" src="assets/logo.png" alt="Club logo" />
+            <div>
+                <h1>Campus Tech Club</h1>
+                <p class="tagline">Learn - Build - Showcase</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#details">Details</a>
+            <a href="#register">Register</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Join the Campus Tech Club</h2>
+                <h3>Learn - Build - Showcase</h3>
+                <p>We are a community of passionate students who love technology, coding, and innovation. Whether you're a beginner or an experienced coder, there's a place for you here.</p>
+                <p><strong>Benefits of joining:</strong></p>
+                <ul>
+                    <li>Access to workshops and hands-on sessions</li>
+                    <li>Work on real-world projects</li>
+                    <li>Network with industry professionals</li>
+                    <li>Build your portfolio</li>
+                </ul>
+                <a class="btn" href="#register">Register Now</a>
+            </div>
+            <img class="hero-img" src="assets/club.jpg" alt="Students working together on a tech project" />
+        </section>
+        <section id="details" class="section">
+            <h2>Club Details</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Weekly Sessions</h3>
+                    <p>Every Wednesday 4-6 PM in Room 101</p>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Mobile App Development</li>
+                        <li>UI/UX Design</li>
+                        <li>Data Science Basics</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Mini Projects</h3>
+                    <p>Hands-on learning through projects</p>
+                    <ul>
+                        <li>Personal Portfolio Website</li>
+                        <li>E-commerce Web App</li>
+                        <li>College Management System</li>
+                        <li>IoT Based Projects</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Showcase & Events</h3>
+                    <p>Platform to demonstrate your skills</p>
+                    <ul>
+                        <li>Monthly Demo Days</li>
+                        <li>Hackathons & Coding Contests</li>
+                        <li>Industry Expert Talks</li>
+                        <li>Inter-College Competitions</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="register" class="section">
+            <h2>Registration Form</h2>
+            <p class="form-intro">Fill out this form to join the Campus Tech Club. All fields marked with * are required.</p>
+
+            <form class="form" action="#" method="post" id="registrationForm">
+                <div class="grid">
+                    <label>
+                        Full Name*
+                        <input type="text" name="fullname" placeholder="Enter your full name" required />
+                    </label>
+
+                    <label>
+                        Email*
+                        <input type="email" name="email" placeholder="student@college.edu" required />
+                    </label>
+
+                    <label>
+                        Phone Number*
+                        <input type="tel" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required />
+                    </label>
+
+                    <label>
+                        Student ID*
+                        <input type="text" name="studentid" placeholder="Enter your college ID" required />
+                    </label>
+
+                    <label>
+                        Department*
+                        <select name="dept" required>
+                            <option value="">Select Department</option>
+                            <option value="CSE">Computer Science & Engineering</option>
+                            <option value="IT">Information Technology</option>
+                            <option value="ECE">Electronics & Communication</option>
+                            <option value="EEE">Electrical & Electronics</option>
+                            <option value="ME">Mechanical Engineering</option>
+                            <option value="CE">Civil Engineering</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Current Semester*
+                        <select name="semester" required>
+                            <option value="">Select Semester</option>
+                            <option value="5">5th Semester</option>
+                            <option value="6">6th Semester</option>
+                            <option value="7">7th Semester</option>
+                            <option value="8">8th Semester</option>
+                        </select>
+                    </label>
+                </div>
+
+                <fieldset>
+                    <legend>Year of Study*</legend>
+                    <div class="radio-group">
+                        <label><input type="radio" name="year" value="3" required /> 3rd Year</label>
+                        <label><input type="radio" name="year" value="4" /> 4th Year</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Technical Skills (Select all that apply)</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="skills" value="html" /> HTML/CSS</label>
+                        <label><input type="checkbox" name="skills" value="js" /> JavaScript</label>
+                        <label><input type="checkbox" name="skills" value="python" /> Python</label>
+                        <label><input type="checkbox" name="skills" value="java" /> Java</label>
+                        <label><input type="checkbox" name="skills" value="cpp" /> C/C++</label>
+                        <label><input type="checkbox" name="skills" value="react" /> React/Node.js</label>
+                        <label><input type="checkbox" name="skills" value="database" /> Database/SQL</label>
+                        <label><input type="checkbox" name="skills" value="uiux" /> UI/UX Design</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Areas of Interest</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interest" value="web" /> Web Development</label>
+                        <label><input type="checkbox" name="interest" value="mobile" /> Mobile App Development</label>
+                        <label><input type="checkbox" name="interest" value="ai" /> AI/Machine Learning</label>
+                        <label><input type="checkbox" name="interest" value="iot" /> IoT & Embedded Systems</label>
+                        <label><input type="checkbox" name="interest" value="cyber" /> Cyber Security</label>
+                        <label><input type="checkbox" name="interest" value="design" /> UI/UX Design</label>
+                    </div>
+                </fieldset>
+
+                <label>
+                    Why do you want to join the Campus Tech Club?*
+                    <textarea name="message" rows="4" placeholder="Tell us about your motivation, goals, and what you hope to achieve..." required></textarea>
+                </label>
+
+                <label>
+                    Any previous projects or experience? (Optional)
+                    <textarea name="experience" rows="3" placeholder="Briefly describe any projects, internships, or tech experience..."></textarea>
+                </label>
+
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" name="terms" required />
+                        I agree to the <a href="#">Club Terms & Conditions</a> and commit to attending regular sessions*
+                    </label>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn">Submit Registration</button>
+                    <button type="reset" class="btn btn-outline">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <p><b>Contact:</b> techclub@college.edu | Room 101, CSE Block</p>
+        <p>Follow: <a href="#">Instagram</a> - <a href="#">LinkedIn</a> - <a href="#">GitHub</a></p>
+        <p class="small">© 2026 Campus Tech Club</p>
+    </footer>
+    <script>
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for registering for the Campus Tech Club! We will contact you soon.');
+    });
+    </script>
+</body>
+</html>

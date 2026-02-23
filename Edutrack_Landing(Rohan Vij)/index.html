@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Name: Rohan Vij
+       Roll: CS-2341127
+       Features: Burger, FAQ, Validation, Dark Mode
+       Issues: None -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduTrack | Industry Readiness Bootcamp</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <div class="brand">
+      <span style="letter-spacing:2px;">EDUTRACK</span>
+    </div>
+
+    <button class="burger" id="burger">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#curriculum">Curriculum</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a class="btn btn-primary" href="#contact">Apply</a>
+  </nav>
+</header>
+
+<main id="home">
+
+<section class="hero">
+  <div class="hero-content">
+    <div style="background:#ffe8cc;padding:6px 10px;border-radius:999px;display:inline-block;">
+      ⚡ Limited Seats
+    </div>
+
+    <h1>Industry Readiness Bootcamp – 6 Weeks</h1>
+    <p>Build real projects & master industry workflows.</p>
+
+    <div class="hero-actions">
+      <a class="btn btn-secondary" href="#curriculum">Curriculum</a>
+      <a class="btn btn-primary" href="#contact" style="border:2px solid #000;">Apply</a>
+    </div>
+
+    <div class="stats">
+      <div><strong>1200+</strong><span>Learners</span></div>
+      <div><strong>85%</strong><span>Placement</span></div>
+      <div><strong>40+</strong><span>Mentors</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="program" class="section">
+  <h2>Program Highlights</h2>
+  <div class="card-grid">
+    <article class="card"><h3>Mentorship</h3></article>
+    <article class="card"><h3>Projects</h3></article>
+    <article class="card"><h3>Placement Prep</h3></article>
+  </div>
+</section>
+
+<section id="curriculum" class="section">
+  <h2>6-Week Curriculum</h2>
+  <div class="timeline">
+    <div class="week">Week 1</div>
+    <div class="week">Week 2</div>
+    <div class="week">Week 3</div>
+    <div class="week">Week 4</div>
+    <div class="week">Week 5</div>
+    <div class="week">Week 6</div>
+  </div>
+</section>
+
+<section id="testimonials" class="section">
+  <h2>Testimonials</h2>
+  <div class="testimonial-grid">
+    <article class="card">⭐⭐⭐⭐☆</article>
+    <article class="card">⭐⭐⭐⭐⭐</article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>FAQ</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">Is prior experience required?</button>
+    <div class="faq-answer">No basic HTML knowledge is enough.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Placement assistance?</button>
+    <div class="faq-answer">Yes resume + mocks included.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Certificate?</button>
+    <div class="faq-answer">Yes after completion.</div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Apply</h2>
+
+  <div id="successBanner" class="success-banner">Form submitted successfully!</div>
+
+  <form class="form" id="contactForm">
+    <input type="text" id="name" placeholder="Full Name"/>
+    <small class="error"></small>
+
+    <input type="email" id="email" placeholder="Email"/>
+    <small class="error"></small>
+
+    <input type="tel" id="phone" placeholder="10 digit phone"/>
+    <small class="error"></small>
+
+    <select id="domain">
+      <option value="">Select Domain</option>
+      <option>Web Dev</option>
+      <option>Data</option>
+    </select>
+
+    <textarea id="message" placeholder="Message"></textarea>
+
+    <label>
+      <input type="checkbox" id="terms"/> Agree terms
+    </label>
+    <small class="error"></small>
+
+    <button class="btn btn-primary">Submit</button>
+  </form>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 EduTrack</p>
+  <button id="themeToggle" class="btn btn-secondary">🌙 Dark</button>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

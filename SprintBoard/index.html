@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sprint Task Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="app-header">
+    <h1>Sprint Task Board</h1>
+
+    <div class="top-controls">
+      <button id="openModalBtn" class="btn-primary">+ Add Task</button>
+
+      <select id="priorityFilter">
+        <option value="all">All Priorities</option>
+        <option value="P1">P1</option>
+        <option value="P2">P2</option>
+        <option value="P3">P3</option>
+      </select>
+
+      <select id="tagFilter">
+        <option value="all">All Tags</option>
+      </select>
+
+      <select id="sortDueDate">
+        <option value="asc">Due Date ↑</option>
+        <option value="desc">Due Date ↓</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Board -->
+  <main class="board">
+
+    <section class="column" data-status="Backlog">
+      <h2>Backlog</h2>
+      <div class="task-list" id="Backlog"></div>
+    </section>
+
+    <section class="column" data-status="In Progress">
+      <h2>In Progress</h2>
+      <div class="task-list" id="In Progress"></div>
+    </section>
+
+    <section class="column" data-status="Done">
+      <h2>Done</h2>
+      <div class="task-list" id="Done"></div>
+    </section>
+
+  </main>
+
+  <!-- Modal -->
+  <div id="taskModal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="modalTitle">Add Task</h3>
+
+      <form id="taskForm">
+
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" id="title" required minlength="5" maxlength="60" />
+        </div>
+
+        <div class="form-group">
+          <label>Description</label>
+          <textarea id="description" maxlength="150"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Priority</label>
+          <select id="priority" required>
+            <option value="">Select</option>
+            <option value="P1">P1</option>
+            <option value="P2">P2</option>
+            <option value="P3">P3</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Due Date</label>
+          <input type="date" id="dueDate" required />
+        </div>
+
+        <div class="form-group">
+          <label>Tags (comma separated, max 5)</label>
+          <input type="text" id="tags" />
+        </div>
+
+        <div class="modal-actions">
+          <button type="submit" class="btn-primary">Save</button>
+          <button type="button" id="closeModalBtn" class="btn-secondary">Cancel</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
