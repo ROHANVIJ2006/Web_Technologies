@@ -1,23 +1,4 @@
-# Node
-node_modules/
-npm-debug.log
-
-# Environment
+backend/node_modules
+frontend/node_modules
 .env
-.env.*
-
-# Python
-.venv/
-__pycache__/
-
-# IDE
-.idea/
-.vscode/
-
-# OS
 .DS_Store
-Thumbs.db
-
-# Build
-dist/
-build/
